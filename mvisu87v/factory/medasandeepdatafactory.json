@@ -1,0 +1,9 @@
+{
+	"name": "medasandeepdatafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8bf4d1a1-63c7-441d-a8c7-d93c24660083",
+		"tenantId": "d00d73fd-d704-40ff-a90f-2281e6d794a2"
+	}
+}
