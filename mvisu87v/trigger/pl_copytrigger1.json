@@ -1,0 +1,25 @@
+{
+	"name": "pl_copytrigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_copy",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 2,
+				"startTime": "2022-08-14T07:22:00Z",
+				"endTime": "2022-08-14T00:22:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
