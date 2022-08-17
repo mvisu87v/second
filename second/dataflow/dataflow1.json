@@ -16,6 +16,9 @@
 			"transformations": [
 				{
 					"name": "derivedColumn1"
+				},
+				{
+					"name": "derivedColumn2"
 				}
 			],
 			"scriptLines": [
@@ -33,7 +36,8 @@
 				"     validateSchema: false,",
 				"     isolationLevel: 'READ_UNCOMMITTED',",
 				"     format: 'table') ~> source1",
-				"source1 derive(Totalsalary = iif(isNull(COMM), SAL, add(SAL, COMM))) ~> derivedColumn1"
+				"source1 derive(Totalsalary = iif(isNull(COMM), SAL, add(SAL, COMM))) ~> derivedColumn1",
+				"derivedColumn1 derive(New_Totalsal = iif(Totalsalary>2000, Totalsalary+(0.2*Totalsalary), Totalsalary+(0.1*Totalsalary))) ~> derivedColumn2"
 			]
 		}
 	}
