@@ -1,0 +1,16 @@
+{
+	"name": "ds_table_create_test2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_Adventureworks",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "test2"
+		}
+	}
+}
