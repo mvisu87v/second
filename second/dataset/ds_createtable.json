@@ -1,0 +1,22 @@
+{
+	"name": "ds_createtable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_Adventureworks",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"desttable": {
+				"type": "string",
+				"defaultValue": "x"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": ""
+		}
+	}
+}
