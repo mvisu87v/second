@@ -106,7 +106,13 @@
 							"outputs": [
 								{
 									"referenceName": "ds_create2tables",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"Tablename": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
