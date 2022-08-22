@@ -1,0 +1,12 @@
+{
+	"name": "ds_create2tables",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_Adventureworks",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
