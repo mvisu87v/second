@@ -1,0 +1,16 @@
+{
+	"name": "ds_lkptable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_Adventureworks",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "data_source_table"
+		}
+	}
+}
