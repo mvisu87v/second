@@ -67,6 +67,7 @@
 									"storeSettings": {
 										"type": "AzureBlobStorageReadSettings",
 										"recursive": true,
+										"wildcardFileName": ".txt",
 										"enablePartitionDiscovery": false
 									},
 									"formatSettings": {
@@ -90,8 +91,14 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "ds_blob_source_2csvs",
-									"type": "DatasetReference"
+									"referenceName": "ds_2csvs_blob",
+									"type": "DatasetReference",
+									"parameters": {
+										"filename": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
