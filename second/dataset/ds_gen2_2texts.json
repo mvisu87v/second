@@ -1,0 +1,23 @@
+{
+	"name": "ds_gen2_2texts",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_visugen2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "one.txt",
+				"folderPath": "source",
+				"fileSystem": "tbsource"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
