@@ -10,8 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "one.txt",
-				"container": "tbsource"
+				"folderPath": "tbsource"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
