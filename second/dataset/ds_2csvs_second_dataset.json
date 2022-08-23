@@ -1,0 +1,22 @@
+{
+	"name": "ds_2csvs_second_dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_visugen2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "source",
+				"fileSystem": "tbsource"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

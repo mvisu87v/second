@@ -15,6 +15,10 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"dataset": {
+						"referenceName": "ds_2csvs_second_dataset",
+						"type": "DatasetReference"
+					},
 					"fieldList": [],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
