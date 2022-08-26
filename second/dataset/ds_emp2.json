@@ -1,0 +1,25 @@
+{
+	"name": "ds_emp2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_Adventureworks",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "varchar"
+			},
+			{
+				"name": "name",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "emp2"
+		}
+	}
+}

@@ -17,22 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
-						"additionalColumns": [
-							{
-								"name": "date",
-								"value": {
-									"value": "@utcnow()",
-									"type": "Expression"
-								}
-							},
-							{
-								"name": "date2",
-								"value": {
-									"value": "@formatDateTime(utcnow(),'yyyyMM')",
-									"type": "Expression"
-								}
-							}
-						],
+						"sqlReaderQuery": "select id,name, format(getdate(), 'yyyyMM') as concat1 from dbo.emp2",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
@@ -70,18 +55,13 @@
 								}
 							},
 							{
-								"sink": {
-									"name": "date1",
+								"source": {
+									"name": "concat1",
 									"type": "String",
 									"physicalType": "varchar"
-								}
-							},
-							{
-								"source": {
-									"name": "date2"
 								},
 								"sink": {
-									"name": "date2",
+									"name": "col3",
 									"type": "String",
 									"physicalType": "varchar"
 								}
@@ -96,13 +76,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "AzureSqlTable2",
+						"referenceName": "ds_emp2",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "ds_AzureSqlTable3",
+						"referenceName": "AzureSqlTable3",
 						"type": "DatasetReference"
 					}
 				]
